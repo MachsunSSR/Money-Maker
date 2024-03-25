@@ -68,7 +68,7 @@ async def connect_to_wss(socks5_proxy, user_id):
                             }
                         }
                         logger.debug(auth_response)
-                        await websocket.sendg(json.dumps(auth_response))
+                        await websocket.send(json.dumps(auth_response))
 
                     elif message.get("action") == "PONG":
                         pong_response = {"id": message["id"], "origin_action": "PONG"}
