@@ -9,6 +9,7 @@ import uuid
 from loguru import logger
 from websockets_proxy import Proxy, proxy_connect
 from fake_useragent import UserAgent
+import websockets.exceptions
 
 user_agent = UserAgent()
 random_user_agent = user_agent.random
@@ -33,13 +34,19 @@ async def connect_to_wss(socks5_proxy, user_id):
                                      extra_headers=custom_headers) as websocket:
                 async def send_ping():
                     while True:
-                        send_message = json.dumps(
-                            {"id": str(uuid.uuid4()), "version": "1.0.0", "action": "PING", "data": {}})
-                        logger.debug(send_message)
-                        await websocket.send(send_message)
-                        await asyncio.sleep(20)
+                        try:
+                            send_message = json.dumps(
+                                {"id": str(uuid.uuid4()), "version": "1.0.0", "action": "PING", "data": {}})
+                            logger.debug(send_message)
+                            await websocket.send(send_message)
+                            await asyncio.sleep(20)
+                        except websockets.exceptions.ConnectionClosedError as e:
+                            logger.error("Connection closed while sending ping.")
+                            break
+                        except asyncio.exceptions.IncompleteReadError as e:
+                            logger.error("Incomplete read while sending ping.")
+                            break
 
-                # asyncio.create_task(send_http_request_every_10_seconds(socks5_proxy, device_id))
                 await asyncio.sleep(1)
                 asyncio.create_task(send_ping())
 
@@ -74,9 +81,13 @@ async def connect_to_wss(socks5_proxy, user_id):
 
 async def main():
     #find user_id on the site in conlose localStorage.getItem('userId') (if you can't get it, write allow pasting)
-    _user_id = input('Enter your user ID: ')
+    _user_id: str  # Type hint for the variable _user_id
+
+    # Open the file and read the user_id value
+    with open('user_id.txt', 'r') as file:
+        _user_id = file.read().strip()
     #put the proxy in a file in the format socks5://username:password@ip:port or socks5://ip:port
-    with open('proxy_list(for1).txt', 'r') as file:
+    with open('proxy_listfor1.txt', 'r') as file:
         socks5_proxy_list = file.read().splitlines()
     
     tasks = [asyncio.ensure_future(connect_to_wss(i, _user_id)) for i in socks5_proxy_list]
