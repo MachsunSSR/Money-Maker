@@ -1,0 +1,15 @@
+socks5://13984781-res-country-BR:2iqtkfnofb@93.190.142.57:11190
+socks5://13984782-res-country-BR-session-1:m5vkgvr4z@62.112.11.200:12322
+socks5://13984783-res-country-BR-session-2:bbara3dql@93.190.142.139:12365
+socks5://13984784-res-country-BR-session-4:1ijzoee3v2@217.23.6.161:11770
+socks5://13984785-res-country-BR-session-3:2m2y0of3qf@93.190.140.139:12281
+socks5://13984786-res-country-BR-session-5:1ozf1g63nr@93.190.141.105:11252
+socks5://13984787-res-country-BR-session-7:2q12f600al@109.236.93.143:12900
+socks5://13984788-res-country-BR-session-9:1k2zpoevia@93.190.138.107:14623
+socks5://13984789-res-country-BR-session-8:oqlh8svxc@109.236.94.16:11825
+socks5://13984790-res-country-BR-session-6:2btqmqsk2e@190.2.137.59:13840
+socks5://13984791-res-country-BR-session-11:1ddvku94yg@93.190.142.57:12033
+socks5://13984792-res-country-BR-session-12:qw1ayfm3r@89.39.106.148:12254
+socks5://13984793-res-country-BR-session-10:7lpmq4igv@93.190.140.139:11459
+socks5://13984794-res-country-BR-session-13:2ma9sz2fz2@93.190.141.105:13662
+socks5://13984795-res-country-BR-session-14:13b9kdcz4o@93.190.142.57:12028
