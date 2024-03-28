@@ -4,8 +4,6 @@ socks5://13973505-res-country-IT-session-32:b8e2kdw3v@109.236.94.16:11697
 socks5://13973506-res-country-IT-session-33:z5866iy39@62.112.11.200:12550
 socks5://13973507-res-country-IT-session-34:d5e1dwicg@93.190.141.118:11671
 socks5://13973508-res-country-IT-session-35:66s1jphsx@93.190.141.118:14833
-socks5://13973509-res-country-IT-session-36:zu0qct543@194.88.106.169:13704
-socks5://13973510-res-country-IT-session-37:evfavudn6@194.88.106.169:11022
 socks5://13973511-res-country-IT-session-38:2n7iorpfg4@190.2.151.110:14003
 socks5://13973512-res-country-IT-session-39:1ezko1szus@93.190.138.107:11365
 socks5://13973513-res-country-IT-session-40:1w2vhpad6s@89.39.106.148:11943
@@ -13,7 +11,6 @@ socks5://13973514-res-country-IT-session-41:2mpeqo9uye@217.23.6.161:14581
 socks5://13973515-res-country-IT-session-42:w7pqr6hyf@109.236.94.16:13195
 socks5://13973516-res-country-IT-session-43:1la5gjzggc@89.39.106.148:13070
 socks5://13973517-res-country-IT-session-44:1c2c5wbcs8@185.21.60.181:14986
-socks5://13973518-res-country-IT-session-45:1534beqie7@194.88.106.169:13346
 socks5://13973519-res-country-IT-session-46:26ko3rsqek@93.190.138.107:12257
 socks5://13973520-res-country-IT-session-48:1vj392sosp@109.236.80.210:14159
 socks5://13973521-res-country-IT-session-47:16hdxyn5h@93.190.142.139:13223
